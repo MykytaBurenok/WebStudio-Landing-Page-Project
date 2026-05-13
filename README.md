@@ -82,5 +82,5 @@ Frontend Developer focused on responsive web applications and modern JavaScript 
 ## Preview
 
 <p align="center">
-  <img src="./images/screenshots/optimize.gif" width="325" height="450"/>
+  <img src="./images/screenshots/optimize.gif" width="325" height="650"/>
 </p>
