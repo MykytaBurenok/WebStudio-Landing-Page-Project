@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
@@ -16,21 +16,25 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="top">
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a href="./index.html" class="logo header-logo"
-            >Web<span>Studio</span></a
-          >
+          <a href="#top" class="logo header-logo">Web<span>Studio</span></a>
+
           <ul class="menu">
             <li class="menu-link">
-              <a href="./index.html" class="link current">Studio</a>
+              <a href="#top" class="link current">Studio</a>
             </li>
-            <li class="menu-link"><a href="" class="link">Portfolio</a></li>
-            <li class="menu-link"><a href="" class="link">Contacts</a></li>
+            <li class="menu-link">
+              <a href="#portfolio" class="link">Portfolio</a>
+            </li>
+            <li class="menu-link">
+              <a href="#contacts" class="link">Contacts</a>
+            </li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="address-details">
             <li>
@@ -45,32 +49,44 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          Theme
+        </button>
+
+        <button class="burger-btn" type="button" aria-label="Open mobile menu">
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
+
       <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" type="button">
+          <button
+            class="mobile-menu-close"
+            type="button"
+            aria-label="Close mobile menu"
+          >
             <svg class="icon-close-mobile" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
+
           <nav class="mobile-navigation">
             <ul class="mobile-menu-list">
               <li class="mobile-menu-link">
-                <a href="./index.html" class="mobile-link accent">Studio</a>
+                <a href="#top" class="mobile-link accent">Studio</a>
               </li>
-              <li class="menu-link">
-                <a href="" class="mobile-link">Portfolio</a>
+              <li class="mobile-menu-link">
+                <a href="#portfolio" class="mobile-link">Portfolio</a>
               </li>
-              <li class="menu-link">
-                <a href="" class="mobile-link">Contacts</a>
+              <li class="mobile-menu-link">
+                <a href="#contacts" class="mobile-link">Contacts</a>
               </li>
             </ul>
           </nav>
+
           <address class="mobile-address">
             <ul class="address-details-mobile">
               <li>
@@ -85,6 +101,7 @@
               </li>
             </ul>
           </address>
+
           <ul class="list-social-networks">
             <li class="list-item-social-icons">
               <a href="#" class="link-social-icons">
@@ -118,16 +135,20 @@
         </div>
       </div>
     </header>
+
     <main>
-      <section class="service">
+      <section class="service" id="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="order-service">Order Service</button>
+          <button class="order-service" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-      <section class="section-benefits">
+
+      <section class="section-benefits" id="benefits">
         <div class="container">
-          <h2 class="visually-hidden">Section 2</h2>
+          <h2 class="visually-hidden">Benefits</h2>
           <ul class="list-benefits">
             <li class="list-punkt">
               <div class="icon-frame">
@@ -180,14 +201,18 @@
           </ul>
         </div>
       </section>
-      <section class="our-team">
+
+      <section class="our-team" id="team">
         <div class="container container-our-team">
           <h2 class="second-title">Our Team</h2>
           <ul class="list-our-team">
             <li class="set-cards">
               <img
                 src="./images/Mark-Guerrero.jpg"
-                srcset="./images/Mark-Guerrero@x2.jpg 2x"
+                srcset="
+                  ./images/Mark-Guerrero.jpg    1x,
+                  ./images/Mark-Guerrero@x2.jpg 2x
+                "
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -227,10 +252,11 @@
                 </ul>
               </div>
             </li>
+
             <li class="set-cards">
               <img
                 src="./images/Tom-Ford.jpg"
-                srcset="./images/Tom-Ford@x2.jpg 2x"
+                srcset="./images/Tom-Ford.jpg 1x, ./images/Tom-Ford@x2.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -270,10 +296,14 @@
                 </ul>
               </div>
             </li>
+
             <li class="set-cards">
               <img
                 src="./images/Camila-Garcia.jpg"
-                srcset="./images/Camila-Garcia@x2.jpg 2x"
+                srcset="
+                  ./images/Camila-Garcia.jpg    1x,
+                  ./images/Camila-Garcia@x2.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -313,10 +343,14 @@
                 </ul>
               </div>
             </li>
+
             <li class="set-cards">
               <img
                 src="./images/Daniel-Wilson.jpg"
-                srcset="./images/Daniel-Wilson@x2.jpg 2x"
+                srcset="
+                  ./images/Daniel-Wilson.jpg    1x,
+                  ./images/Daniel-Wilson@x2.jpg 2x
+                "
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -359,7 +393,8 @@
           </ul>
         </div>
       </section>
-      <section class="our-portfolio">
+
+      <section class="our-portfolio" id="portfolio">
         <div class="container">
           <h2 class="our-portfolio-title">Our Portfolio</h2>
           <ul class="our-portfolio-list">
@@ -369,8 +404,6 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="./images/App.jpg 1x, ./images/App@x2.jpg 2x"
-                    width="360px"
-                    height="300px"
                   />
                   <source
                     media="(min-width: 768px)"
@@ -378,8 +411,6 @@
                       ./images/App-tablet.jpg    1x,
                       ./images/App-tablet@x2.jpg 2x
                     "
-                    width="356px"
-                    height="300px"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -387,11 +418,14 @@
                       ./images/App-mobile.jpg    1x,
                       ./images/App-mobile@x2.jpg 2x
                     "
-                    width="288px"
-                    height="280px"
                   />
-                  <img src="./images/App-mobile.jpg" alt="Banking App"
-                  width="288px" height="280px" loading="lazy"
+                  <img
+                    src="./images/App-mobile.jpg"
+                    alt="Banking App"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                  />
                 </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -404,6 +438,7 @@
                 <p class="description">App</p>
               </div>
             </li>
+
             <li class="our-portfolio-list-item">
               <div class="container-hidden">
                 <picture>
@@ -413,8 +448,6 @@
                       ./images/Cashless-Payment.jpg    1x,
                       ./images/Cashless-Payment@x2.jpg 2x
                     "
-                    width="360px"
-                    height="300px"
                   />
                   <source
                     media="(min-width: 768px)"
@@ -422,8 +455,6 @@
                       ./images/Cashless-Payment-tablet.jpg    1x,
                       ./images/Cashless-Payment-tablet@x2.jpg 2x
                     "
-                    width="356px"
-                    height="300px"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -431,12 +462,14 @@
                       ./images/Cashless-Payment-mobile.jpg    1x,
                       ./images/Cashless-Payment-mobile@x2.jpg 2x
                     "
-                    width="288px"
-                    height="280px"
                   />
-                  <img src="./images/Cashless-Payment-mobile.jpg"
-                  alt="Cashless-Payment" width="288px" height="280px"
-                  loading="lazy"
+                  <img
+                    src="./images/Cashless-Payment-mobile.jpg"
+                    alt="Cashless Payment"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                  />
                 </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -449,6 +482,7 @@
                 <p class="description">Marketing</p>
               </div>
             </li>
+
             <li class="our-portfolio-list-item">
               <div class="container-hidden">
                 <picture>
@@ -458,17 +492,13 @@
                       ./images/Meditation-App.jpg    1x,
                       ./images/Meditation-App@x2.jpg 2x
                     "
-                    width="360px"
-                    height="300px"
                   />
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./Meditation-App-tablet.jpg           1x,
+                      ./images/Meditation-App-tablet.jpg    1x,
                       ./images/Meditation-App-tablet@x2.jpg 2x
                     "
-                    width="356px"
-                    height="300px"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -476,12 +506,14 @@
                       ./images/Meditation-App-mobile.jpg    1x,
                       ./images/Meditation-App-mobile@x2.jpg 2x
                     "
-                    width="288px"
-                    height="280px"
                   />
-                  <img src="./images/Meditation-App-mobile.jpg"
-                  alt="Cashless-Payment" width="288px" height="280px"
-                  loading="lazy"
+                  <img
+                    src="./images/Meditation-App-mobile.jpg"
+                    alt="Meditation App"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                  />
                 </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -494,6 +526,7 @@
                 <p class="description">App</p>
               </div>
             </li>
+
             <li class="our-portfolio-list-item">
               <div class="container-hidden">
                 <picture>
@@ -503,17 +536,13 @@
                       ./images/Taxi-Service.jpg    1x,
                       ./images/Taxi-Service@x2.jpg 2x
                     "
-                    width="360px"
-                    height="300px"
                   />
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./Taxi-Service-tablet.jpg           1x,
+                      ./images/Taxi-Service-tablet.jpg    1x,
                       ./images/Taxi-Service-tablet@x2.jpg 2x
                     "
-                    width="356px"
-                    height="300px"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -521,12 +550,14 @@
                       ./images/Taxi-Service-mobile.jpg    1x,
                       ./images/Taxi-Service-mobile@x2.jpg 2x
                     "
-                    width="288px"
-                    height="280px"
                   />
-                  <img src="./images/Taxi-Service-mobile.jpg"
-                  alt="Cashless-Payment" width="288px" height="280px"
-                  loading="lazy"
+                  <img
+                    src="./images/Taxi-Service-mobile.jpg"
+                    alt="Taxi Service"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                  />
                 </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -539,6 +570,7 @@
                 <p class="description">Marketing</p>
               </div>
             </li>
+
             <li class="our-portfolio-list-item">
               <div class="container-hidden">
                 <picture>
@@ -548,17 +580,13 @@
                       ./images/Screen-Illustrations.jpg    1x,
                       ./images/Screen-Illustrations@x2.jpg 2x
                     "
-                    width="360px"
-                    height="300px"
                   />
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./Screen-Illustrations-tablet.jpg           1x,
+                      ./images/Screen-Illustrations-tablet.jpg    1x,
                       ./images/Screen-Illustrations-tablet@x2.jpg 2x
                     "
-                    width="356px"
-                    height="300px"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -566,12 +594,14 @@
                       ./images/Screen-Illustrations-mobile.jpg    1x,
                       ./images/Screen-Illustrations-mobile@x2.jpg 2x
                     "
-                    width="288px"
-                    height="280px"
                   />
-                  <img src="./images/Screen-Illustrations-mobile.jpg"
-                  alt="Cashless-Payment" width="288px" height="280px"
-                  loading="lazy"
+                  <img
+                    src="./images/Screen-Illustrations-mobile.jpg"
+                    alt="Screen Illustrations"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                  />
                 </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -584,6 +614,7 @@
                 <p class="description">Design</p>
               </div>
             </li>
+
             <li class="our-portfolio-list-item">
               <div class="container-hidden">
                 <picture>
@@ -593,17 +624,13 @@
                       ./images/Online-Courses.jpg    1x,
                       ./images/Online-Courses@x2.jpg 2x
                     "
-                    width="360px"
-                    height="300px"
                   />
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./Online-Courses-tablet.jpg           1x,
+                      ./images/Online-Courses-tablet.jpg    1x,
                       ./images/Online-Courses-tablet@x2.jpg 2x
                     "
-                    width="356px"
-                    height="300px"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -611,12 +638,14 @@
                       ./images/Online-Courses-mobile.jpg    1x,
                       ./images/Online-Courses-mobile@x2.jpg 2x
                     "
-                    width="288px"
-                    height="280px"
                   />
-                  <img src="./images/Online-Courses-mobile.jpg"
-                  alt="Cashless-Payment" width="288px" height="280px"
-                  loading="lazy"
+                  <img
+                    src="./images/Online-Courses-mobile.jpg"
+                    alt="Online Courses"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                  />
                 </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -633,17 +662,19 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer" id="contacts">
       <div class="container end-container">
         <div class="footer-logo-text">
-          <a href="./index.html" class="logo-footer-link"
+          <a href="#top" class="logo-footer-link"
             >Web<span class="span-footer">Studio</span>
           </a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
+            digital marketing &amp; growth solutions.
           </p>
         </div>
+
         <div class="footer-social-links">
           <p class="text-social-media">Social media</p>
           <ul class="footer-list-social">
@@ -677,6 +708,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-form">
           <p class="footer-subscribe">Subscribe</p>
           <form class="subscribe-form" name="footer-form">
@@ -698,14 +730,22 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="close-popup" type="button">
+        <button
+          class="close-popup"
+          type="button"
+          data-modal-close
+          aria-label="Close modal"
+        >
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
         <p class="form-title">Leave your contacts and we will call you back</p>
+
         <form name="contact-info" autocomplete="on">
           <div class="form-field-wrapper">
             <label class="label-field" for="user-name">Name</label>
@@ -721,6 +761,7 @@
               </svg>
             </div>
           </div>
+
           <div class="form-field-wrapper">
             <label class="label-field" for="userphone">Phone</label>
             <div class="field-wrapper">
@@ -735,6 +776,7 @@
               </svg>
             </div>
           </div>
+
           <div class="form-field-wrapper">
             <label class="label-field" for="useremail">Email</label>
             <div class="field-wrapper">
@@ -749,6 +791,7 @@
               </svg>
             </div>
           </div>
+
           <div class="form-field-wraper-comment">
             <label class="label-field" for="user-comment">Comment</label>
             <textarea
@@ -756,9 +799,9 @@
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
+
           <div class="form-field-wrapper-privacy">
             <input
               class="policy-checkbox visually-hidden"
@@ -777,9 +820,12 @@
               <a href="#" class="accent-policy-link">Privacy Policy</a>
             </label>
           </div>
+
           <button type="submit" class="button-send-form">Send</button>
         </form>
       </div>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

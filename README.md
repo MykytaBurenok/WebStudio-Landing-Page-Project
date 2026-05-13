@@ -12,7 +12,10 @@ The goal was not only to recreate a static design, but also to build a polished,
 ## Preview
 
 <p align="center">
-  <img src="./screenshots/demo.gif" width="900"/>
+  <img src="./images/screenshots/Screenshot 2026-05-13 135342.png" width="900"/>
+</p>
+<p align="center">
+  <img src="./images/screenshots/Screenshot 2026-05-13 135442.png" width="900"/>
 </p>
 
 ## Features
@@ -64,9 +67,7 @@ Another focus area was creating reusable layout patterns that kept the design vi
 
 ## Future Improvements
 
-- Add smooth scroll navigation
 - Improve animations and transitions
-- Add dark mode support
 - Further optimize accessibility and performance
 
 ## Why This Project Matters
