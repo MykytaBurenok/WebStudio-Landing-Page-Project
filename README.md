@@ -78,3 +78,11 @@ This project demonstrates practical frontend fundamentals beyond static layouts.
 
 Mykyta Burenok  
 Frontend Developer focused on responsive web applications and modern JavaScript interfaces.
+
+
+
+## Preview
+
+<p align="center">
+  <img src="./images/screenshots/demo.gif.gif" width="325" height="450"/>
+</p>
