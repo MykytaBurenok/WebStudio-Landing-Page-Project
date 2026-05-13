@@ -12,11 +12,18 @@ The goal was not only to recreate a static design, but also to build a polished,
 ## Preview
 
 <p align="center">
+  <img src="./images/screenshots/optimize.gif" width="325" height="650"/>
+</p>
+
+## Preview
+
+<p align="center">
   <img src="./images/screenshots/Screenshot 2026-05-13 135342.png" width="900"/>
 </p>
 <p align="center">
   <img src="./images/screenshots/Screenshot 2026-05-13 135442.png" width="900"/>
 </p>
+
 
 ## Features
 
@@ -78,9 +85,3 @@ This project demonstrates practical frontend fundamentals beyond static layouts.
 
 Mykyta Burenok  
 Frontend Developer focused on responsive web applications and modern JavaScript interfaces.
-
-## Preview
-
-<p align="center">
-  <img src="./images/screenshots/optimize.gif" width="325" height="650"/>
-</p>
